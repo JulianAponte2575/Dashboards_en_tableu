@@ -1,0 +1,2649 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/Envos?rev=1.1' id='Envos' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='title'>
+      <format attr='font-size' value='12' />
+      <format attr='font-weight' value='bold' />
+      <format attr='color' value='#000000' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Datos (Envios)' inline='true' name='federated.0s5ilwz030adit1f354te1g87bq9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Envios' name='excel-direct.0p29k4t1fzridk10hhm4z1yo30zc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0p29k4t1fzridk10hhm4z1yo30zc' name='Datos' table='[Datos$]' type='table'>
+          <columns gridOrigin='A1:N396:no:A1:N396:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Id.' ordinal='0' />
+            <column datatype='integer' name='Cantidad' ordinal='1' />
+            <column datatype='date' name='Fecha_Entrega' ordinal='2' />
+            <column datatype='string' name='MES' ordinal='3' />
+            <column datatype='integer' name='Año' ordinal='4' />
+            <column datatype='string' name='Estado_Revisión' ordinal='5' />
+            <column datatype='string' name='Origen' ordinal='6' />
+            <column datatype='string' name='Id.Destino' ordinal='7' />
+            <column datatype='string' name='Descripción_Destino' ordinal='8' />
+            <column datatype='string' name='Id.Tienda' ordinal='9' />
+            <column datatype='string' name='COD. Producto2' ordinal='10' />
+            <column datatype='string' name='Descripción_Producto' ordinal='11' />
+            <column datatype='string' name='COD.Vehiculo' ordinal='12' />
+            <column datatype='integer' name='Costos' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0p29k4t1fzridk10hhm4z1yo30zc' name='Datos' table='[Datos$]' type='table'>
+          <columns gridOrigin='A1:N396:no:A1:N396:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Id.' ordinal='0' />
+            <column datatype='integer' name='Cantidad' ordinal='1' />
+            <column datatype='date' name='Fecha_Entrega' ordinal='2' />
+            <column datatype='string' name='MES' ordinal='3' />
+            <column datatype='integer' name='Año' ordinal='4' />
+            <column datatype='string' name='Estado_Revisión' ordinal='5' />
+            <column datatype='string' name='Origen' ordinal='6' />
+            <column datatype='string' name='Id.Destino' ordinal='7' />
+            <column datatype='string' name='Descripción_Destino' ordinal='8' />
+            <column datatype='string' name='Id.Tienda' ordinal='9' />
+            <column datatype='string' name='COD. Producto2' ordinal='10' />
+            <column datatype='string' name='Descripción_Producto' ordinal='11' />
+            <column datatype='string' name='COD.Vehiculo' ordinal='12' />
+            <column datatype='integer' name='Costos' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N396:no:A1:N396:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id.]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Id.</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cantidad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cantidad]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Cantidad</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fecha_Entrega</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Fecha_Entrega]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Fecha_Entrega</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MES</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MES]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>MES</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Año</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Año]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Año</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estado_Revisión</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Estado_Revisión]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Estado_Revisión</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origen</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Origen]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Origen</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id.Destino</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Id.Destino]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Id.Destino</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción_Destino</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Descripción_Destino]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Descripción_Destino</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id.Tienda</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Id.Tienda]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Id.Tienda</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD. Producto2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COD. Producto2]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>COD. Producto2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción_Producto</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Descripción_Producto]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Descripción_Producto</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD.Vehiculo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COD.Vehiculo]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>COD.Vehiculo</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RMX_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Costos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Costos]</local-name>
+            <parent-name>[Datos]</parent-name>
+            <remote-alias>Costos</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Año]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[COD.Vehiculo]' role='dimension' type='nominal' />
+      <column caption='Total de envios' datatype='integer' name='[Calculation_534802500868665345]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Estado_Revisión])' />
+      </column>
+      <column caption='% Entregados' datatype='real' name='[Calculation_534802500868997122]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Finalizado&quot; )then 1 else 0 end)/ COUNT([Estado_Revisión])' />
+      </column>
+      <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+      <column caption='Descripción Producto' datatype='string' name='[Descripción_Producto]' role='dimension' type='nominal' />
+      <column caption='% Devueltos' datatype='real' name='[Entregados (copia)_534802500869390339]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Retorno&quot; )then 2 else 0 end) / COUNT([Estado_Revisión])' />
+      </column>
+      <column caption='% Pendientes' datatype='real' name='[Entregados (copia)_534802500869722116]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Pendiente&quot; )then 1 else 0 end) / COUNT([Estado_Revisión])' />
+      </column>
+      <column datatype='string' datatype-customized='true' name='[Estado_Revisión]' role='dimension' type='nominal' />
+      <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Id.Tienda]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Id.]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Datos' datatype='table' name='[__tableau_internal_object_id__].[Datos_D18E613C5C47471291FE6A298B0A3492]' role='measure' type='quantitative' />
+      <column-instance column='[COD.Vehiculo]' derivation='None' name='[none:COD.Vehiculo:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Descripción_Destino]' derivation='None' name='[none:Descripción_Destino:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Id.Tienda]' derivation='None' name='[none:Id.Tienda:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Origen]' derivation='None' name='[none:Origen:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (Descripción Destino)' hidden='true' name='[Action (Descripción Destino)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Descripción_Destino]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (MES(Fecha Entrega))' hidden='true' name='[Action (MONTH(Fecha Entrega))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Origen)' hidden='true' name='[Action (Origen)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Origen]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/Julian/AppData/Local/Temp/TableauTemp/#TableauTemp_1gaefen1g1eka11gss9k70cdbuca.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/29/2024 10:12:00 PM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id.</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Id.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id.</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>395</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cantidad</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cantidad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cantidad</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fecha_Entrega</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Fecha_Entrega]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fecha_Entrega</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Datos</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>395</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MES</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MES</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Año</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Año]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Año</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estado_Revisión</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Estado_Revisión]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estado_Revisión</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Origen</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Origen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Origen</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Id.Destino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id.Destino]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id.Destino</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Descripción_Destino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Descripción_Destino]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Descripción_Destino</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Id.Tienda</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id.Tienda]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id.Tienda</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COD. Producto2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COD. Producto2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COD. Producto2</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Descripción_Producto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Descripción_Producto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Descripción_Producto</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COD.Vehiculo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COD.Vehiculo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COD.Vehiculo</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RMX_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Costos</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Costos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Costos</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>318</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Datos_D18E613C5C47471291FE6A298B0A3492]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Origen:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Almacén 1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Almacén 3&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Almacén 2&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Id.Tienda:nk]' palette='sf_dark' type='palette'>
+            <map to='#067d77'>
+              <bucket>&quot;Tienda 1S007&quot;</bucket>
+            </map>
+            <map to='#0e70c7'>
+              <bucket>&quot;Tienda 1S001&quot;</bucket>
+            </map>
+            <map to='#0e70c7'>
+              <bucket>&quot;Tienda 2S003&quot;</bucket>
+            </map>
+            <map to='#26aba4'>
+              <bucket>&quot;Tienda 1S008&quot;</bucket>
+            </map>
+            <map to='#3296ed'>
+              <bucket>&quot;Tienda 1S002&quot;</bucket>
+            </map>
+            <map to='#3296ed'>
+              <bucket>&quot;Tienda 2S006&quot;</bucket>
+            </map>
+            <map to='#7719e3'>
+              <bucket>&quot;Tienda 1S004&quot;</bucket>
+            </map>
+            <map to='#7719e3'>
+              <bucket>&quot;Tienda 2S009&quot;</bucket>
+            </map>
+            <map to='#9d53f2'>
+              <bucket>&quot;Tienda 1S005&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Descripción_Destino:nk]' palette='sf_dark' type='palette'>
+            <map to='#067d77'>
+              <bucket>&quot;Lima&quot;</bucket>
+            </map>
+            <map to='#0e70c7'>
+              <bucket>&quot;Arequipa&quot;</bucket>
+            </map>
+            <map to='#0e70c7'>
+              <bucket>&quot;Tacna&quot;</bucket>
+            </map>
+            <map to='#26aba4'>
+              <bucket>&quot;Piura&quot;</bucket>
+            </map>
+            <map to='#3296ed'>
+              <bucket>&quot;Callao&quot;</bucket>
+            </map>
+            <map to='#3296ed'>
+              <bucket>&quot;Trujillo&quot;</bucket>
+            </map>
+            <map to='#7719e3'>
+              <bucket>&quot;Iquitos&quot;</bucket>
+            </map>
+            <map to='#7719e3'>
+              <bucket>&quot;Tumbes&quot;</bucket>
+            </map>
+            <map to='#9d53f2'>
+              <bucket>&quot;Jauja&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:COD.Vehiculo:nk]' palette='sf_dark' type='palette'>
+            <map to='#067d77'>
+              <bucket>&quot;Tra5&quot;</bucket>
+            </map>
+            <map to='#0e70c7'>
+              <bucket>&quot;Tra1&quot;</bucket>
+            </map>
+            <map to='#3296ed'>
+              <bucket>&quot;Tra2&quot;</bucket>
+            </map>
+            <map to='#7719e3'>
+              <bucket>&quot;Tra3&quot;</bucket>
+            </map>
+            <map to='#9d53f2'>
+              <bucket>&quot;Tra4&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Datos' id='Datos_D18E613C5C47471291FE6A298B0A3492'>
+            <properties context=''>
+              <relation connection='excel-direct.0p29k4t1fzridk10hhm4z1yo30zc' name='Datos' table='[Datos$]' type='table'>
+                <columns gridOrigin='A1:N396:no:A1:N396:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Id.' ordinal='0' />
+                  <column datatype='integer' name='Cantidad' ordinal='1' />
+                  <column datatype='date' name='Fecha_Entrega' ordinal='2' />
+                  <column datatype='string' name='MES' ordinal='3' />
+                  <column datatype='integer' name='Año' ordinal='4' />
+                  <column datatype='string' name='Estado_Revisión' ordinal='5' />
+                  <column datatype='string' name='Origen' ordinal='6' />
+                  <column datatype='string' name='Id.Destino' ordinal='7' />
+                  <column datatype='string' name='Descripción_Destino' ordinal='8' />
+                  <column datatype='string' name='Id.Tienda' ordinal='9' />
+                  <column datatype='string' name='COD. Producto2' ordinal='10' />
+                  <column datatype='string' name='Descripción_Producto' ordinal='11' />
+                  <column datatype='string' name='COD.Vehiculo' ordinal='12' />
+                  <column datatype='integer' name='Costos' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filtro 1 (generado)' name='[Action1_7791B6D6D389400589EAD83B4838E1BE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='COSTOS POR DESTINO' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 2 (generado)' name='[Action2_56DDD83245A14F6D988530518023B9EC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='COSTOS POR MES' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 3 (generado)' name='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='% DE COSTOS POR ALMACEN' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 4 (generado)' name='[Action4_883449757DEB4F28AF975357C32D5EE2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='ENVIOS POR VEHICULO' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 5 (generado)' name='[Action5_9BC3732ADE77495CAE8940AF1729A506]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='COMPRAS POR TIENDA' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 6 (generado)' name='[Action6_67A79371980D4BA193B5429FD0B99801]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='ENTREGAS POR MES' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% DE COSTOS POR ALMACEN'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/DECOSTOSPORALMACEN?rev=' id='103971287' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Origen]' derivation='None' name='[none:Origen:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Costos]' derivation='Sum' name='[pcto:sum:Costos:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Costos]' derivation='Sum' name='[sum:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Origen:nk]' />
+              <size column='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' />
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[pcto:sum:Costos:qk]' />
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Origen:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6F979AA5-F9CA-4B28-BEB7-8FB5777AD11F}' />
+    </worksheet>
+    <worksheet name='% DE ENTREGADOS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/DEENTREGADOS?rev=' id='103971295' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column caption='% Entregados' datatype='real' name='[Calculation_534802500868997122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Finalizado&quot; )then 1 else 0 end)/ COUNT([Estado_Revisión])' />
+            </column>
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column datatype='string' datatype-customized='true' name='[Estado_Revisión]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_534802500868997122]' derivation='User' name='[usr:Calculation_534802500868997122:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Calculation_534802500868997122:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Calculation_534802500868997122:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>% ENTREGADOS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Calculation_534802500868997122:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{762BEABA-E1BE-4E72-955C-41D3F0D00D03}' />
+    </worksheet>
+    <worksheet name='% DE ENTREGADOS (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/DEENTREGADOS2?rev=' id='103971296' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='% Devueltos' datatype='real' name='[Entregados (copia)_534802500869390339]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Retorno&quot; )then 2 else 0 end) / COUNT([Estado_Revisión])' />
+            </column>
+            <column datatype='string' datatype-customized='true' name='[Estado_Revisión]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Entregados (copia)_534802500869390339]' derivation='User' name='[usr:Entregados (copia)_534802500869390339:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869390339:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869390339:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>% DEVUELTOS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869390339:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AE09D06A-8840-4117-BB64-DA846DCCFC40}' />
+    </worksheet>
+    <worksheet name='% DE ENTREGADOS (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/DEENTREGADOS3?rev=' id='103971297' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='% Pendientes' datatype='real' name='[Entregados (copia)_534802500869722116]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(if([Estado_Revisión] = &quot;Pendiente&quot; )then 1 else 0 end) / COUNT([Estado_Revisión])' />
+            </column>
+            <column datatype='string' datatype-customized='true' name='[Estado_Revisión]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Entregados (copia)_534802500869722116]' derivation='User' name='[usr:Entregados (copia)_534802500869722116:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869722116:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869722116:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>% PENDIENTES</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869722116:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A655FF63-6E57-4542-85C8-BE9FEC12DD10}' />
+    </worksheet>
+    <worksheet name='COMPRAS POR TIENDA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/COMPRASPORTIENDA?rev=' id='103971291' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Cantidad]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Id.Tienda]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Id.Tienda]' derivation='None' name='[none:Id.Tienda:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cantidad]' derivation='Sum' name='[sum:Cantidad:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Id.Tienda:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Id.Tienda:nk]' />
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]</rows>
+        <cols>[federated.0s5ilwz030adit1f354te1g87bq9].[none:Id.Tienda:nk]</cols>
+      </table>
+      <simple-id uuid='{FD8FCA3C-3CF6-42CE-B6F6-F6C1F0404311}' />
+    </worksheet>
+    <worksheet name='COSTO MÁXIMO'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/COSTOMXIMO?rev=' id='103971293' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Costos]' derivation='Max' name='[max:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[max:Costos:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>COSTO MÁXIMO</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[max:Costos:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A5BC094F-57B1-4BAE-961D-64469DBBE7AA}' />
+    </worksheet>
+    <worksheet name='COSTO MÁXIMO (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/COSTOMXIMO2?rev=' id='103971294' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Costos]' derivation='Min' name='[min:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[min:Costos:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>COSTO MÍNIMO</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[min:Costos:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E6CA7D5B-A7CA-4F6B-B562-21C407292287}' />
+    </worksheet>
+    <worksheet name='COSTOS POR DESTINO'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/COSTOSPORDESTINO?rev=' id='103971286' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Descripción_Destino]' derivation='None' name='[none:Descripción_Destino:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Costos]' derivation='Sum' name='[sum:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Descripción_Destino:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s5ilwz030adit1f354te1g87bq9].[none:Descripción_Destino:nk]' />
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]</rows>
+        <cols>[federated.0s5ilwz030adit1f354te1g87bq9].[none:Descripción_Destino:nk]</cols>
+      </table>
+      <simple-id uuid='{D80CCC27-48FD-4A6D-9ADB-41EE8A4FF58C}' />
+    </worksheet>
+    <worksheet name='COSTOS POR MES'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/COSTOSPORMES?rev=' id='103971288' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Costos]' derivation='Sum' name='[sum:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[tmn:Fecha_Entrega:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]</rows>
+        <cols>[federated.0s5ilwz030adit1f354te1g87bq9].[tmn:Fecha_Entrega:qk]</cols>
+      </table>
+      <simple-id uuid='{43DCE493-5D40-4206-A07E-EE3EBB4AB9BF}' />
+    </worksheet>
+    <worksheet name='ENTREGAS POR MES'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/ENTREGASPORMES?rev=' id='103971290' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Cantidad]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Cantidad]' derivation='Sum' name='[sum:Cantidad:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[tmn:Fecha_Entrega:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]</rows>
+        <cols>[federated.0s5ilwz030adit1f354te1g87bq9].[tmn:Fecha_Entrega:qk]</cols>
+      </table>
+      <simple-id uuid='{D43A6DA9-1E41-4771-B58D-41F7B17851FA}' />
+    </worksheet>
+    <worksheet name='ENVIOS POR VEHICULO'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/ENVIOSPORVEHICULO?rev=' id='103971289' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='string' name='[COD.Vehiculo]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cantidad]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[COD.Vehiculo]' derivation='None' name='[none:COD.Vehiculo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cantidad]' derivation='Sum' name='[sum:Cantidad:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0s5ilwz030adit1f354te1g87bq9].[none:COD.Vehiculo:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s5ilwz030adit1f354te1g87bq9].[none:COD.Vehiculo:nk]' />
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s5ilwz030adit1f354te1g87bq9].[none:COD.Vehiculo:nk]</rows>
+        <cols>[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Cantidad:qk]</cols>
+      </table>
+      <simple-id uuid='{10EAA59E-6628-472C-B6CF-420F0EBE2F25}' />
+    </worksheet>
+    <worksheet name='SUMA DE COSTOS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/SUMADECOSTOS?rev=' id='103971292' path='/workbooks/Envos' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Datos (Envios)' name='federated.0s5ilwz030adit1f354te1g87bq9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5ilwz030adit1f354te1g87bq9'>
+            <column datatype='integer' name='[Costos]' role='measure' type='quantitative' />
+            <column caption='Descripción Destino' datatype='string' name='[Descripción_Destino]' role='dimension' type='nominal' />
+            <column caption='Fecha Entrega' datatype='date' name='[Fecha_Entrega]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Origen]' role='dimension' type='nominal' />
+            <column-instance column='[Costos]' derivation='Sum' name='[sum:Costos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fecha_Entrega]' derivation='Month-Trunc' name='[tmn:Fecha_Entrega:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]'>
+            <groupfilter function='level-members' level='[Descripción_Destino]' user:ui-action-filter='[Action1_7791B6D6D389400589EAD83B4838E1BE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]'>
+            <groupfilter function='level-members' level='[tmn:Fecha_Entrega:ok]' user:ui-action-filter='[Action6_67A79371980D4BA193B5429FD0B99801]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]'>
+            <groupfilter function='level-members' level='[Origen]' user:ui-action-filter='[Action3_E1468EEAE0C94004A4F3821BEB1121B8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Descripción Destino)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (Origen)]</column>
+            <column>[federated.0s5ilwz030adit1f354te1g87bq9].[Action (MONTH(Fecha Entrega))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>SUMA DE COSTOS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.0s5ilwz030adit1f354te1g87bq9].[sum:Costos:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{10266BFB-7F8A-4BE8-B3D1-18E1D1F9B4BE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://vizhub/workbooks/Envos/Dashboard1?rev=' id='103971298' path='/workbooks/Envos' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='47500' id='3' name='ENTREGAS POR MES' w='34500' x='20400' y='10250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='37250' id='5' name='COSTOS POR DESTINO' w='21300' x='800' y='61750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='37250' id='6' name='% DE COSTOS POR ALMACEN' w='18800' x='56200' y='61750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='37250' id='7' name='COSTOS POR MES' w='34100' x='22100' y='61750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='37250' id='8' name='ENVIOS POR VEHICULO' w='24200' x='75000' y='61750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='47500' id='9' name='COMPRAS POR TIENDA' w='26000' x='73200' y='10250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13875' id='10' name='COSTO MÁXIMO (2)' show-title='false' w='19600' x='800' y='43875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='11' name='COSTO MÁXIMO' show-title='false' w='19600' x='800' y='26875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8375' id='12' name='SUMA DE COSTOS' show-title='false' w='19600' x='800' y='10250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9000' id='13' name='% DE ENTREGADOS' show-title='false' w='18300' x='54900' y='10250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8250' id='14' name='% DE ENTREGADOS (2)' show-title='false' w='18300' x='54900' y='27125'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14250' id='15' name='% DE ENTREGADOS (3)' show-title='false' w='18300' x='54900' y='43500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5208' id='17' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='16'>DETALLE DE ENVÍOS 2020-2021</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='8250' id='18' param='vert' type-v2='layout-flow' w='19600' x='800' y='18625' />
+          <zone h='7625' id='19' param='vert' type-v2='layout-flow' w='19600' x='800' y='36250' />
+          <zone h='7875' id='20' param='vert' type-v2='layout-flow' w='18300' x='54900' y='19250' />
+          <zone h='8125' id='21' param='vert' type-v2='layout-flow' w='18300' x='54900' y='35375' />
+          <zone h='4000' id='22' param='vert' type-v2='layout-flow' w='98400' x='800' y='57750' />
+          <zone h='4042' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='6208' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2350' minheight='2350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='5208' id='17' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='16'>DETALLE DE ENVÍOS 2020-2021</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='59' h='8375' id='12' is-fixed='true' name='SUMA DE COSTOS' show-title='false' w='19600' x='800' y='10250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47500' id='3' is-fixed='true' name='ENTREGAS POR MES' w='34500' x='20400' y='10250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='64' h='9000' id='13' is-fixed='true' name='% DE ENTREGADOS' show-title='false' w='18300' x='54900' y='10250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47500' id='9' is-fixed='true' name='COMPRAS POR TIENDA' w='26000' x='73200' y='10250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='9375' id='11' is-fixed='true' name='COSTO MÁXIMO' show-title='false' w='19600' x='800' y='26875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='58' h='8250' id='14' is-fixed='true' name='% DE ENTREGADOS (2)' show-title='false' w='18300' x='54900' y='27125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='106' h='14250' id='15' is-fixed='true' name='% DE ENTREGADOS (3)' show-title='false' w='18300' x='54900' y='43500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='13875' id='10' is-fixed='true' name='COSTO MÁXIMO (2)' show-title='false' w='19600' x='800' y='43875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='5' is-fixed='true' name='COSTOS POR DESTINO' w='21300' x='800' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='7' is-fixed='true' name='COSTOS POR MES' w='34100' x='22100' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='6' is-fixed='true' name='% DE COSTOS POR ALMACEN' w='18800' x='56200' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='8' is-fixed='true' name='ENVIOS POR VEHICULO' w='24200' x='75000' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{39EB27EB-B0D1-4C63-89BD-F9033B4C9B04}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='COSTOS POR DESTINO'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5ilwz030adit1f354te1g87bq9].[none:Descripción_Destino:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{462B07C2-9841-45A8-AB9E-CBC020CA0CCF}' />
+    </window>
+    <window class='worksheet' name='% DE COSTOS POR ALMACEN'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5ilwz030adit1f354te1g87bq9].[none:Origen:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{971DC834-1703-45A1-ACD3-51111775B974}' />
+    </window>
+    <window class='worksheet' name='COSTOS POR MES'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{34010494-B164-40C6-AD4B-4AB1F5E23B59}' />
+    </window>
+    <window class='worksheet' name='ENVIOS POR VEHICULO'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5ilwz030adit1f354te1g87bq9].[none:COD.Vehiculo:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB6347C4-373D-49E2-AA8F-B1B10BA10A1A}' />
+    </window>
+    <window class='worksheet' name='ENTREGAS POR MES'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5ilwz030adit1f354te1g87bq9].[yr:Fecha_Entrega:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F9AD230F-9705-496A-B336-CDD4E08CBC89}' />
+    </window>
+    <window class='worksheet' name='COMPRAS POR TIENDA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5ilwz030adit1f354te1g87bq9].[none:Id.Tienda:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95B2F9BE-B715-436F-982D-C7C9973EB4CD}' />
+    </window>
+    <window class='worksheet' name='SUMA DE COSTOS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5EB07043-77B6-443F-BD3F-C6F4A1AC8A8B}' />
+    </window>
+    <window class='worksheet' name='COSTO MÁXIMO'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B5B7540B-5D8A-4874-84AF-1CDDEF66351A}' />
+    </window>
+    <window class='worksheet' name='COSTO MÁXIMO (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BB7A15BC-642F-417E-B240-FEC3479758E4}' />
+    </window>
+    <window class='worksheet' name='% DE ENTREGADOS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{725199B8-4621-4E2F-8FDD-D086D1F088AE}' />
+    </window>
+    <window class='worksheet' name='% DE ENTREGADOS (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6FB98C1B-EB05-47C2-90BF-BE89ACD2C140}' />
+    </window>
+    <window class='worksheet' name='% DE ENTREGADOS (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0s5ilwz030adit1f354te1g87bq9].[usr:Entregados (copia)_534802500869722116:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.10632911392405063</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{765D0530-48A0-4F7D-B144-972D51EE8C7E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='% DE COSTOS POR ALMACEN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='% DE ENTREGADOS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='% DE ENTREGADOS (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='% DE ENTREGADOS (3)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='COMPRAS POR TIENDA'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='COSTO MÁXIMO'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='COSTO MÁXIMO (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='COSTOS POR DESTINO'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='COSTOS POR MES'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ENTREGAS POR MES'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ENVIOS POR VEHICULO'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SUMA DE COSTOS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{842896FD-AD12-40A4-AB90-4470D9B30198}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
